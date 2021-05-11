@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22a2f640f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo">Dubai Cafeteria</h1>
+            <div class="toggle"></div>
+        </header>
+       <video src="img/Pexels Videos 2832316.mp4" muted autoplay loop></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>Welcome to Dubai Cafeteria</h1>
+            <h3>We make delicious food</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, dolorem nisi! Nulla nostrum tempore inventore nemo laborum, earum aliquam necessitatibus.</p>
+            <a href="#">Order food</a>
+        </div>
+        <div class="social">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+            </ul>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Order</li>
+            <li>About Us</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let hamburg=document.querySelector('.toggle');
+    let showmenu=document.querySelector('.showcase');
+    hamburg.addEventListener('click',()=>{
+        hamburg.classList.toggle('active');
+        showmenu.classList.toggle('active');
+    })
+</script>
+</html>
